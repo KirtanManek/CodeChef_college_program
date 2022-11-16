@@ -12,14 +12,12 @@ public class Mahasena {
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(bufferedReader.readLine());
 		List<Integer> info = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-				.map(Integer::parseInt)
-				.collect(toList());
+			.map(Integer::parseInt)
+			.collect(toList());
 		int even = 0, odd = 0;
 		for (int i = 0; i < n; i++) {
-			if (info.get(i) % 2 == 0)
-				even++;
-			else
-				odd++;
+			if (info.get(i) % 2 == 0) even++;
+			else odd++;
 		}
 		System.out.println(even > odd ? "READY FOR BATTLE" : "NOT READY");
 	}
