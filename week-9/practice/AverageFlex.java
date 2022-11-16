@@ -14,10 +14,10 @@ public class AverageFlex
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(bufferedReader.readLine());
 		for(int i = 0; i < n; i++){
-		    int p = Integer.parseInt(bufferedReader.readLine());
-		    List<Integer> h = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
+			int p = Integer.parseInt(bufferedReader.readLine());
+		    	List<Integer> h = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+           			 .map(Integer::parseInt)
+            			 .collect(toList());
 			int count = 0;
 			for(int j = 0; j < p; j++){
 				int min = 0, max = 0;
