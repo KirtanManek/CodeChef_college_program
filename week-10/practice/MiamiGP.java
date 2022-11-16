@@ -13,8 +13,8 @@ public class MiamiGP {
 		int n = Integer.parseInt(bufferedReader.readLine());
 		for (int i = 0; i < n; i++) {
 			List<Double> info = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-					.map(Double::parseDouble)
-					.collect(toList());
+				.map(Double::parseDouble)
+				.collect(toList());
 			double percent = 1.07 * info.get(0);
 			System.out.println(info.get(1) <= percent ? "YES" : "NO");
 		}
