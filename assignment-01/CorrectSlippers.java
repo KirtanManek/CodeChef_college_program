@@ -16,19 +16,17 @@ public class CorrectSlippers
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(bufferedReader.readLine());
 		for(int i = 0; i < n; i++){
-		    List<Integer> h = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
-            
-            int ans = 0;
-            
-            if((h.get(1) * 2) <= h.get(0)){
-                ans = h.get(1) * h.get(2);
-            }
-            else{
-                ans = (h.get(0) - h.get(1)) * h.get(2);
-            }
-            System.out.println(ans);
+		    	List<Integer> h = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+            			.map(Integer::parseInt)
+            			.collect(toList()); 
+            		int ans = 0; 
+            		if((h.get(1) * 2) <= h.get(0)){
+                		ans = h.get(1) * h.get(2);
+            		}
+            		else{
+                		ans = (h.get(0) - h.get(1)) * h.get(2);
+            		}
+            		System.out.println(ans);
 		}
 	}
 }
