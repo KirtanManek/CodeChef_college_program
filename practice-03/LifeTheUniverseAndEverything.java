@@ -7,7 +7,8 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.toList;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class Codechef
+/* Change the class name to "Codechef" and remove public. */
+public class LifeTheUniverseAndEverything
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
