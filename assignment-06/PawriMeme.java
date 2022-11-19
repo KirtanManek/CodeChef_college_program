@@ -11,9 +11,9 @@ public class PawriMeme
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(bufferedReader.readLine());
 		for(int i = 0; i < n; i++){
-		    String p = bufferedReader.readLine();
-            p = p.replaceAll("party", "pawri");
-            System.out.println(p);
+		    	String p = bufferedReader.readLine();
+            		p = p.replaceAll("party", "pawri");
+            		System.out.println(p);
 		}
 	}
 }
