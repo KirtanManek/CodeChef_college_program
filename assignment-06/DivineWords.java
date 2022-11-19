@@ -14,8 +14,8 @@ public class DivineWords
 		List<String> divineList = new ArrayList<String>(Arrays.asList(divine.split("")));
 		int n = Integer.parseInt(bufferedReader.readLine());
 		for(int i = 0; i < n; i++){
-		    String str = bufferedReader.readLine();
-		    List<String> strList = new ArrayList<String>(Arrays.asList(str.split("")));
+		    	String str = bufferedReader.readLine();
+		    	List<String> strList = new ArrayList<String>(Arrays.asList(str.split("")));
 			System.out.println(divineList.containsAll(strList) ? "Yes" : "No");
 		}
 	}
