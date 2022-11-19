@@ -14,7 +14,7 @@ public class HealthyStrings
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(bufferedReader.readLine());
 		for(int i = 0; i < n; i++){
-		    String str = bufferedReader.readLine();
+		    	String str = bufferedReader.readLine();
 			String s1 = str.substring(0, str.length() / 2), s2;
 			if (str.length() % 2 == 0) {
 				s2 = str.substring(str.length() / 2);
