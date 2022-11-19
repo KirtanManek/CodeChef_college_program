@@ -16,13 +16,13 @@ public class TheWoddenPlates
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		long n = Long.parseLong(bufferedReader.readLine());
 		for(int i = 0; i < n; i++){
-		    long totalPlates = Long.parseLong(bufferedReader.readLine());
-            if(totalPlates == 0 || totalPlates == 1) {
-                System.out.println(totalPlates);
-            }
-            else{
-                System.out.println(((totalPlates - 1) / 2) + 1);    
-            }
+		    	long totalPlates = Long.parseLong(bufferedReader.readLine());
+            		if(totalPlates == 0 || totalPlates == 1) {
+                		System.out.println(totalPlates);
+            		}
+            		else{
+                		System.out.println(((totalPlates - 1) / 2) + 1);    
+            		}
 		}
 	}
 }
