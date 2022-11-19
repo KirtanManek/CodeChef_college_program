@@ -12,10 +12,10 @@ public class GameOfPossibility {
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(bufferedReader.readLine());
 		for(int i = 0; i < n; i++) {
-		    List<Integer> info = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                    .map(Integer::parseInt)
-                    .collect(toList());
-            System.out.println(info.get(2) * 2 + info.get(0) >= info.get(1) ? "YES" : "NO");
+		    	List<Integer> info = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                    		.map(Integer::parseInt)
+                    		.collect(toList());
+            		System.out.println(info.get(2) * 2 + info.get(0) >= info.get(1) ? "YES" : "NO");
 		}
 	}
 }
